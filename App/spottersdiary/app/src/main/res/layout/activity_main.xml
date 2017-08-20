@@ -30,6 +30,7 @@
             android:layout_height="90dp"
             android:layout_margin="@dimen/button_spacing"
             android:background="@color/colorPrimaryDark"
+            android:onClick="sendMessage"
             android:text="@string/spot_a_plane"
             android:textColor="@android:color/white"
             android:textSize="@dimen/button_text_size"

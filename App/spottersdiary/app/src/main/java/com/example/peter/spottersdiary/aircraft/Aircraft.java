@@ -5,5 +5,8 @@ package com.example.peter.spottersdiary.aircraft;
  */
 
 public class Aircraft {
+    private AircraftType type;
+    private String register;
+    private String airline;
 
 }
