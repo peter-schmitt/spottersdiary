@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Spotters Diary</string>
+    <string name="spot_a_plane">Spot a Plane!</string>
+    <string name="list_spottings">List Spottings!</string>
 </resources>
