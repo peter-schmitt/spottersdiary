@@ -94,4 +94,15 @@
     </string>
     <string name="action_settings">Settings</string>
     <string name="aircraft_registration">Aircraft Registration</string>
+    <string name="aircraft_manufacturer">Aircraft Manufacturer</string>
+    <string name="aircraft_type">Aircraft Type</string>
+    <string name="aircraft_ICAO_code">Aircraft ICAO Code</string>
+    <string name="sighting_date">Sighting Date</string>
+    <string name="airport_ICAO_code">Airport ICAO Code</string>
+    <string name="airport_name">Airport Name</string>
+    <string name="airport_land">Airport Land</string>
+    <string name="text_aircraft">Aircraft</string>
+    <string name="text_sighting">Sighting</string>
+    <string name="aircraft_airline">Aircraft Airline</string>
+    <string name="button_save">Save</string>
 </resources>
