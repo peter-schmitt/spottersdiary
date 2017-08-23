@@ -11,6 +11,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import java.io.Serializable;
 
 import static java.util.Locale.getDefault;
 
@@ -19,7 +20,7 @@ import static java.util.Locale.getDefault;
  * Created by Peter on 23.08.2017.
  */
 
-public class DataStorage {
+public class DataStorage implements Serializable{
 
     // DataStorage must be a semaphore.
     private static DataStorage instance;
@@ -44,6 +45,14 @@ public class DataStorage {
         return the_sightings;
     }
 
+    public void initializeStorage(ArrayList<Sighting> sightings) {
+        this.the_sightings = sightings;
+    }
+
+    public ArrayList<Sighting> getSightings(){
+        return this.the_sightings;
+    }
+
     public void addSighting(Sighting the_sighting) {
         this.the_sightings.add(the_sighting);
     }
@@ -57,4 +66,5 @@ public class DataStorage {
         }
         return theArray;
     }
+
 }

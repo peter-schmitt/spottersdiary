@@ -1,10 +1,12 @@
 package com.example.peter.spottersdiary.aircraft;
 
+import java.io.Serializable;
+
 /**
  * Created by peter on 20.08.2017.
  */
 
-public class Aircraft {
+public class Aircraft implements Serializable{
     private AircraftType type;
     private String register;
     private String airline;

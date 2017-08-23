@@ -1,6 +1,7 @@
 package com.example.peter.spottersdiary;
 
 import android.app.DatePickerDialog;
+import android.content.Context;
 import android.icu.util.Calendar;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
@@ -23,7 +24,6 @@ public class Spot_A_Plane extends AppCompatActivity {
     private DataStorage the_data;
     Calendar theDate = Calendar.getInstance();
     DatePickerDialog datePickerDialog;
-            //new DatePickerDialog(this, Spot_A_Plane.this, theDate.get(Calendar.YEAR), theDate.get(Calendar.MONTH), theDate.get(Calendar.DAY_OF_MONTH));
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,6 +77,10 @@ public class Spot_A_Plane extends AppCompatActivity {
 
         //create the sighting
         the_data.addSighting(new Sighting(the_aircraft, theDate, the_airport));
+
+        Log.d(TAG, "save initiated");
+        MyApp.saveToFile(getApplication().getApplicationContext(), the_data.getSightings());
+        Log.d(TAG, "save finished");
 
         NavUtils.navigateUpFromSameTask(this);
     }

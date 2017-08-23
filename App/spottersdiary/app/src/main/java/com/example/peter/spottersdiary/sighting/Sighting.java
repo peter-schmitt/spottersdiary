@@ -5,6 +5,7 @@ import android.icu.util.Calendar;
 import com.example.peter.spottersdiary.aircraft.*;
 import com.example.peter.spottersdiary.airport.Airport;
 
+import java.io.Serializable;
 import java.util.Date;
 
 
@@ -12,7 +13,7 @@ import java.util.Date;
  * Created by peter on 20.08.2017.
  */
 
-public class Sighting {
+public class Sighting implements Serializable {
     private Aircraft the_aircraft;
     private Calendar the_date;
     private Airport the_airport;
