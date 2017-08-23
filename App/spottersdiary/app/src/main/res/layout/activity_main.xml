@@ -47,6 +47,7 @@
             android:layout_margin="@dimen/button_spacing"
             android:layout_weight="1"
             android:background="@color/colorPrimaryDark"
+            android:onClick="listSpottings"
             android:text="@string/list_spottings"
             android:textColor="@android:color/white"
             android:textSize="@dimen/button_text_size"

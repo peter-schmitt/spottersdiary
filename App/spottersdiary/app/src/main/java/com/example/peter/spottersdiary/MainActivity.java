@@ -25,4 +25,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Spot_A_Plane.class);
         startActivity(intent);
     }
+
+    public void listSpottings(View v) {
+        Intent intent = new Intent(this, List_Spottings.class);
+        startActivity(intent);
+    }
 }

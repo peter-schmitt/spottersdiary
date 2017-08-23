@@ -23,7 +23,12 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.peter.spottersdiary.MainActivity" />
         </activity>
-        <activity android:name=".List_Spottings"></activity>
+        <activity android:name=".List_Spottings"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.peter.spottersdiary.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

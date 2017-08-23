@@ -107,4 +107,5 @@
     <string name="button_save">Save</string>
     <string name="airport_city">Airport City</string>
     <string name="select_date">Select Date</string>
+    <string name="date_format_string">DD.MM.YYYY</string>
 </resources>
