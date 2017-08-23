@@ -16,12 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Spot_A_Plane"
-            android:parentActivityName="com.example.peter.spottersdiary.MainActivity">
+        <activity
+            android:name=".Spot_A_Plane"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.peter.spottersdiary.MainActivity" />
         </activity>
+        <activity android:name=".List_Spottings"></activity>
     </application>
 
 </manifest>

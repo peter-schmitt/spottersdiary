@@ -105,4 +105,6 @@
     <string name="text_sighting">Sighting</string>
     <string name="aircraft_airline">Aircraft Airline</string>
     <string name="button_save">Save</string>
+    <string name="airport_city">Airport City</string>
+    <string name="select_date">Select Date</string>
 </resources>
